@@ -21,6 +21,8 @@ define('WP_HOME', 'http://foo.dev');
 define('WP_SITEURL', WP_HOME . '/site/');
 define('WP_CONTENT_DIR', APP_ROOT . '/public/content');
 define('WP_CONTENT_URL', WP_HOME . '/content');
+
+define('WP_DEBUG', TRUE);
 /** The name of the database for WordPress */
 define('DB_NAME', 'mysite');
 

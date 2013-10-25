@@ -16,30 +16,30 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 
-define('APP_ROOT', dirname(__DIR__));
-define('WP_HOME', 'http://foo.dev');
-define('WP_SITEURL', WP_HOME . '/site/');
-define('WP_CONTENT_DIR', APP_ROOT . '/public/content');
-define('WP_CONTENT_URL', WP_HOME . '/content');
+define('APP_ROOT',				dirname(__DIR__));
+define('WP_HOME',					'http://foo.dev');
+define('WP_SITEURL', 			WP_HOME . '/site/');
+define('WP_CONTENT_DIR',	APP_ROOT . '/public/content');
+define('WP_CONTENT_URL',	WP_HOME . '/content');
 
-define('WP_DEBUG', TRUE);
+define('WP_DEBUG', 				TRUE);
 /** The name of the database for WordPress */
-define('DB_NAME', 'mysite');
+define('DB_NAME', 				'mysite');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER',					'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD',			'root');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST',					'localhost');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET',			'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+define('DB_COLLATE', 			'');
 
 /**#@+
  * Authentication Unique Keys and Salts.

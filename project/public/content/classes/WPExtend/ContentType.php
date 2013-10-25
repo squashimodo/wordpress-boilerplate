@@ -5,9 +5,9 @@ namespace WPPlugins\WPExtend;
 class ContentType {
 	public $type;
 	public $options = array();
-	public $labels = array();
+	public $labels 	= array();
 
-	public $plural_name_field = 'plural_name';
+	public $plural_name_field 	= 'plural_name';
 	public $singular_name_field = 'singular_name';
 
 	public function __construct($type, $options = array(), $labels = array()) {
@@ -15,8 +15,8 @@ class ContentType {
 		$this->type = $type;
 
 		$default_options = array(
-			'public' => true,
-			'supports' => array('title', 'editor', 'revisions', 'thumbnail')
+			'public'		=> true,
+			'supports'	=> array('title', 'editor', 'revisions', 'thumbnail')
 		);
 
 		$required_labels = array(
@@ -24,11 +24,11 @@ class ContentType {
 			'plural_name'		=> ucwords($this->type)
 		);
 
-		$this->options = $options + $default_options;
+		$this->options 						= $options 	 		+ $default_options;
 
-		$this->labels = $labels + $required_labels;
+		$this->labels 						= $labels 	 		+ $required_labels;
 
-		$this->options['labels'] = $this->labels + $this->default_labels();
+		$this->options['labels'] 	= $this->labels + $this->default_labels();
 
 		add_action('init', array($this, 'register'));
 	}
